@@ -1,0 +1,9 @@
+name: PR
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    uses: zoidpay/zoid-actions/.github/workflows/code-checks.yaml@f41f4f5f82e3bfb93a94165a1306521babc400d0
+  

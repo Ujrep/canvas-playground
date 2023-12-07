@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "curly": 2,
+        "no-console": ["error", { "allow": ["error"] }] ,
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never", "propElementValues": "always" }],
+        "react/display-name": "off",
+        "react/no-unescaped-entities": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
